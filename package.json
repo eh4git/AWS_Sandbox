@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/eh4git/AWS_Sandbox#readme",
   "dependencies": {
+    "aws-sdk": "^2.824.0",
     "express": "^4.17.1"
   }
 }

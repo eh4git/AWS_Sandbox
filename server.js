@@ -1,11 +1,10 @@
-const express = require('express')
+const express = require('express');
 const app = express()
 const port = 3000
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
+require("./routes/api/s3")(app);
+require("./routes/html/index")(app);
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
+  console.log(`AWS Sandbox is waiting for you at http://localhost:${port}`)
 })
